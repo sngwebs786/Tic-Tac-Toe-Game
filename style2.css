@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+
+}
+/* ///MAIN BOX START/// */
+.main{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C60C30;
+    padding: 0 15px;
+    height: 100vh;
+ 
+}
+/* ///MAIN BOX END/// */
+
+
+/* ////game heading start///// */
+.main-hd{
+    margin-bottom: 20px;
+}
+.main-hd h2{
+    font-size: 45px ;
+    font-family: 'STIX Two Text', serif;
+    color: whitesmoke;
+}
+/* ////game heading end///// */
+
+
+/* /////TOSS STYLING START/// */
+.tossBox h2{
+        background-image:linear-gradient(to right , #C9D6FF ,#E2E2E2);
+        padding: 10px;
+        border-radius: 5px;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: capitalize;
+    }
+/* /////TOSS STYLING END/// */
+
+
+.hide{
+    display: none !important;
+}
+
+
+
+
+
+/* /////MAIN TIC TAC TAE GAME STYLING START///////// */
+.userBtn{
+    width: 100%;
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-image: linear-gradient(to right , #f05053 , #e1eec3); */
+}
+.userBtn button{
+    margin: 15px 10px;
+    width: 140px;
+    height: auto;
+    outline: none;
+    /* background-color: blue; */
+    color: white;
+    font-family: cursive;
+    padding: 8px;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+}
+.userBtn button:disabled{
+    background-color: gray;
+}
+.allBoxes{
+    width: 100%;
+    /* border: 2px solid lime; */
+}
+table {
+    max-width: 350px;
+    margin: auto;
+}
+
+/* /////SET BORDER IN TIC APP//// */
+td {
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 35px;
+    
+    
+}
+.one,.three{
+    border-bottom: none !important;
+}
+.one,.three , .four , .six{
+    border: 2px solid lightgray;
+}
+.two, .five,.eight{
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+.eight{
+    border-top: none !important;
+}
+.two{
+    border-bottom: none !important;
+}
+.seven , .nine{
+    border: 2px solid lightgray;
+    border-top: none !important;
+}
+
+
+.tdDisable{
+    pointer-events: none !important;
+}
+/* /////MAIN TIC TAC TAE GAME STYLING END///////// */
+
+.user-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+.user-form h3{
+    font-family: 'STIX Two Text', serif;
+    font-size: 24px;
+    color: rgb(255, 166, 0);
+}
+.user-form input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    /* font-family: cursive; */
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid rgb(39, 97, 255);
+    margin: 15px 0;
+    }
+.user-form button{
+    display: block;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    outline: none;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    align-items: center !important;
+}
+.user-form button:hover{
+    background-color: rgb(255, 166, 0);
+}
+
+
+
+    /* ///////RESULT BOX STYLING START///// */
+.resultBox{
+    border: 2px  dashed rgb(255, 166, 0);
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+}
+#winName{
+    /* border:1px solid black; */
+    margin: 15px 0;
+    font-size: 45px;
+    font-family: cursive;
+    color: rgb(39, 97, 255);
+}
+
+#winning{
+    /* color: ; */
+    font-family: cursive;
+    font-size: 35px;
+    color: wheat;
+    margin: 15px 0;
+}
+
+.resultBtn button{
+    margin: 15px 10px;
+    width: 140px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    height: 40px;
+    color: black;
+    overflow: hidden;
+    border: none;
+}
+.resultBtn button:hover{
+    background-color: rgb(255, 166, 0);
+    color: white;
+}
